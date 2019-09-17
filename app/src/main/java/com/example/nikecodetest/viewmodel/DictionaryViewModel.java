@@ -50,19 +50,13 @@ public class DictionaryViewModel extends BaseObservable {
 
             @Override
             public void onNext(WordDefinitions response) {
-                // isDataloading.set(true);
-//                items.clear();
+                
 
                 WordDefinitions res = response;
 
                 adapter.updateData(res.getWordDefinitions());
 
-//                for (Object s : response) {
-//                    items.add((School) s);
-//                }
-//                mActionListener.notifyDataSetUpdate();
-//                String a = items.get(1).getSchoolName();
-//                System.out.println("length next" + items.size());
+
             }
         };
 
